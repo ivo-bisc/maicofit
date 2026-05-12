@@ -17,8 +17,15 @@ document.querySelectorAll('.reserve-btn, .plan-button').forEach(btn => {
 
         setTimeout(() => ripple.remove(), 600);
 
-        // Mostrar mensaje
-        showNotification('¡Gracias por tu interés! Te contactaremos pronto.');
+        // Si es un botón de "RESERVAR LLAMADA", ir a WhatsApp
+        if (this.textContent.includes('RESERVAR LLAMADA')) {
+            setTimeout(() => {
+                window.location.href = 'http://wa.me/541144036786';
+            }, 300);
+        } else {
+            // Mostrar mensaje para otros botones
+            showNotification('¡Gracias por tu interés! Te contactaremos pronto.');
+        }
     });
 });
 
