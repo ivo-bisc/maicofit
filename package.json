@@ -1,0 +1,14 @@
+{
+  "name": "maicofit",
+  "version": "1.0.0",
+  "description": "Sitio web de MaicoFit - Transformación física y mental",
+  "homepage": "https://ivo-bisc.github.io/maicofit/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .",
+    "build": "echo 'No build needed for static site'"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
